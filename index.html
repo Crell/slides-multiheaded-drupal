@@ -18,11 +18,17 @@
     document.getElementsByTagName( 'head' )[0].appendChild( link );
   </script>
 
+  <script src="platform-reveal/classer.js"></script>
+
   <!--[if lt IE 9]>
   <script src="lib/js/html5shiv.js"></script>
   <![endif]-->
 
   <style type="text/css">
+
+    .struck {
+      text-decoration: line-through;
+    }
 
     ul.inline {
       margin: 0;
@@ -229,12 +235,13 @@
           <li class="fragment">Packages of functionality</li>
           <li class="fragment">Easily distributable (Sometimes)</li>
         </ul>
-        <p class="fragment">At least until Drupal 8...</p>
+        <p class="fragment">And there's even a Drupal 8 version <span class="fragment">(That's a good thing!)</span> </p>
         <aside class="notes">
           <ul>
             <li>Deploy new functionality to many sites, new features module</li>
             <li>Deploy, enable, done.</li>
             <li>Not always viable; needs to be discrete functionality</li>
+            <li>Features problem was core, Config Mgmt makes it work</li>
           </ul>
         </aside>
       </section>
@@ -242,7 +249,7 @@
         <h2>Install profiles</h2>
         <ul>
           <li class="fragment">Since Drupal 5</li>
-          <li class="fragment">Quasi-modules in Drupal 7</li>
+          <li class="fragment">Quasi-modules as of Drupal 7</li>
           <li class="fragment">All the power of a module...</li>
           <li class="fragment">... plus install wizards
             <ul>
@@ -543,6 +550,7 @@ $sites['fundraising.drupalassociation.com'] = 'da_fundraising';
         <h2><a href="http://drupal.org/project/og">Organic Groups</a></h2>
         <ul>
           <li class="fragment">Rewritten for Drupal 7</li>
+          <li class="fragment">Drupal 8 version in progress...</li>
           <li class="fragment">Any entity == "group"</li>
           <li class="fragment">Any entity belongs to a "group"</li>
           <li class="fragment">Users join groups</li>
